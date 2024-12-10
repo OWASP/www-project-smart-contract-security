@@ -1,0 +1,63 @@
+{
+  "metadata": {
+    "title": "Smart Contract Security Verification Standard (SCSVS)",
+    "remarks": "The SCSVS is a comprehensive framework for securing smart contracts, with a focus on identifying vulnerabilities and mitigating risks in smart contract deployments.",
+    "version": "v1.0.0"
+  },
+  "groups": [
+    {
+      "gid": "SCSVS-ARCH",
+      "index": 1,
+      "title": "Architecture, Design, and Threat Modeling",
+      "description": "This group focuses on the design and architecture of smart contracts, ensuring that they are secure by design and built with modularity, upgradability, and separation of concerns in mind. It emphasizes the importance of threat modeling to identify and mitigate risks early in the design phase.",
+      "controls": [
+        {
+          "cid": "SCSVS-ARCH-1",
+          "objective": "Ensure that smart contracts are designed with modularity and upgradability in mind.",
+          "requirements": [
+            {
+              "rid": "S1.1.A1",
+              "tid": "SCSTG-TEST-0005",
+              "requirement": "Verify that the contract is divided into modular components or contracts.",
+              "checklist": [
+                "Check if the contract is divided into separate modules or contracts.",
+                "Check if the contract is destroyed with separation of concerns in mind."
+              ]
+            },
+            {
+              "rid": "S1.1.A2",
+              "tid": "SCSTG-TEST-0006",
+              "requirement": "Ensure that upgrade mechanisms are designed to allow secure and controlled updates.",
+              "checklist": [
+                "Check if the contract is divided into separate modules or contracts.",
+                "Check if the contract is deployed with separation of concerns in mind."
+              ]
+            }
+          ]
+        },
+        {
+          "cid": "SCSVS-ARCH-2",
+          "objective": "Ensure that smart contracts are designed with modularity and upgradability in mind.",
+          "requirements": [
+            {
+              "rid": "S1.1.B1",
+              "requirement": "Verify that the contract is divided into modular components or contracts.",
+              "checklist": [
+                "Check if the contract is divided into separate modules or contracts.",
+                "Check if the contract is destruct with separation of concerns in mind."
+              ]
+            },
+            {
+              "rid": "S1.1.B2",
+              "requirement": "Ensure that upgrade mechanisms are designed to allow secure and controlled updates.",
+              "checklist": [
+                "Check if the contract is divided into separate modules or contracts.",
+                "Check if the contract is demolish with separation of concerns in mind."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
